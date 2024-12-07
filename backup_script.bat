@@ -7,14 +7,14 @@ echo ==== Backup Started at %DATE% %TIME% ==== >> %LOGFILE%
 
 :: Map drives with credentials
 echo Mapping drive B:... >> %LOGFILE%
-net use B: \\192.168.100.228\Tally.ERP9 /user:administrator Server123 >> %LOGFILE% 2>&1
+net use B: \\192.168.1.1\DocumentServer /user:administrator pass123 >> %LOGFILE% 2>&1
 if errorlevel 1 (
     echo Failed to map drive B:. Exiting... >> %LOGFILE%
     goto end
 )
 
 echo Mapping drive S:... >> %LOGFILE%
-net use S: \\192.168.100.249\TallyERP9Shakti /user:administrator Server@Ban >> %LOGFILE% 2>&1
+net use S: \\192.168.1.2\TallyServer /user:administrator pass123 >> %LOGFILE% 2>&1
 if errorlevel 1 (
     echo Failed to map drive S:. Exiting... >> %LOGFILE%
     goto end
