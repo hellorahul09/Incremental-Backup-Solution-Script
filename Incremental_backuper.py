@@ -86,8 +86,8 @@ def backup_multiple_locations(pairs):
 
 # Example usage with multiple source-destination pairs
 source_destination_pairs = [
-    (r"\\192.168.100.228\Tally.ERP9", r"E:\Backup Files\Banyan Tally"),
-    (r"\\192.168.100.249\TallyERP9Shakti", r"E:\Backup Files\Shakti Tally")
+    (r"\\192.168.1.1\DocumentServer", r"E:\Backup Files\DocumentServer"),
+    (r"\\192.168.1.2\TallyServer", r"E:\Backup Files\TallyServer")
 ]
 
 
